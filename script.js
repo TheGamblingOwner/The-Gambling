@@ -10,7 +10,7 @@ const betSelect = document.getElementById("bet");
 
 const spinSound = document.getElementById("spinSound");
 const winSound = document.getElementById("winSound");
-const loseSound = document.getElementById("loseSound");
+
 
 spinBtn.addEventListener("click", () => {
   const bet = parseInt(betSelect.value);
@@ -58,7 +58,7 @@ spinBtn.addEventListener("click", () => {
       });
     } else {
       message.textContent = "💨 No match! Try again!";
-      loseSound.play();
+      
       winStreak = 0;
     }
 
