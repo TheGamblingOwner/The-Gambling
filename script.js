@@ -7,17 +7,12 @@ const balanceDisplay = document.getElementById("balance");
 const message = document.getElementById("message");
 const spinBtn = document.getElementById("spinBtn");
 const betSelect = document.getElementById("bet");
-
-const spinSound = document.getElementById("spinSound");
-const winSound = document.getElementById("winSound");
-
-
 spinBtn.addEventListener("click", () => {
   const bet = parseInt(betSelect.value);
   if (balance < bet) {
     message.textContent = "Not enough credits! 💀";
     return;
-  }
+
 
   balance -= bet;
   balanceDisplay.textContent = balance;
@@ -46,7 +41,7 @@ spinBtn.addEventListener("click", () => {
       win = bet * 5;
       winStreak++;
       message.textContent = `🎉 JACKPOT! You won ${win} credits! (x${winStreak} streak bonus!)`;
-      winSound.play();
+
       slotEls.forEach(s => s.classList.add("win"));
     } else if (result[0] === result[1] || result[1] === result[2] || result[0] === result[2]) {
       win = bet * 2;
