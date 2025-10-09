@@ -1,39 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slot Machine Deluxe</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silent Slot Game</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🎰 Slot Machine Deluxe 🎰</h1>
-  <p>Balance: <span id="balance">100</span> credits</p>
-
-  <label for="bet">Bet:</label>
-  <select id="bet">
-    <option value="10">10</option>
-    <option value="20">20</option>
-    <option value="50">50</option>
-  </select>
-
-  <div id="slot-machine">
-    <div class="slot" id="slot1">🍒</div>
-    <div class="slot" id="slot2">🍋</div>
-    <div class="slot" id="slot3">🍇</div>
+  <div class="slot-machine">
+    <h1>Slot Machine 🎰</h1>
+    <div class="reels">
+      <div class="reel" id="reel1">🍒</div>
+      <div class="reel" id="reel2">🍋</div>
+      <div class="reel" id="reel3">🍉</div>
+    </div>
+    <button id="spin">SPIN</button>
+    <p id="result"></p>
   </div>
-
-  <button id="spinBtn">SPIN</button>
-  <p id="message"></p>
-
-  <!-- 🔊 Sound effects -->
-  <audio id="spinSound" src="https://assets.mixkit.co/active_storage/sfx/2560/2560-preview.mp3"></audio>
-  <audio id="winSound" src="https://assets.mixkit.co/active_storage/sfx/2011/2011-preview.mp3"></audio>
-  <audio id="loseSound" src="https://assets.mixkit.co/active_storage/sfx/1090/1090-preview.mp3"></audio>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
