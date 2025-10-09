@@ -8,9 +8,6 @@ const message = document.getElementById("message");
 const spinBtn = document.getElementById("spinBtn");
 const betSelect = document.getElementById("bet");
 
-const spinSound = document.getElementById("spinSound");
-const winSound = document.getElementById("winSound");
-const loseSound = document.getElementById("loseSound");
 
 spinBtn.addEventListener("click", () => {
   const bet = parseInt(betSelect.value);
